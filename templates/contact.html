@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TwineEngine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>TwineEngine</h1>
+        <nav>
+            <a class="text-white" href="/">Home</a>
+            <a class="text-white" href="/about">About Us</a>
+            <a class="text-white" href="/services">Our Services</a>
+            <a class="text-white" href="/contact">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@twineengine.com">info@twineengine.com</a></p>
+        <p>Telephone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/twineengine" target="_blank" rel="noopener">@twineengine</a></p>
+        <p>WhatsApp Business: <a href="https://wa.me/1234567890" target="_blank" rel="noopener">+123 456 7890</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/twineengine" target="_blank" rel="noopener">TwineEngine</a></p>
+        <p>Location:</p>
+        <div id="map"></div>
+    </div>
+    <script>
+        function initMap() {
+            var location = {lat: -25.344, lng: 131.036};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TwineEngine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>TwineEngine</h1>
+        <nav>
+            <a class="text-white" href="/">Home</a>
+            <a class="text-white" href="/about">About Us</a>
+            <a class="text-white" href="/services">Our Services</a>
+            <a class="text-white" href="/contact">Contact Us</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <div>
+            <h1>Welcome to TwineEngine</h1>
+            <p>Your success is our mission.</p>
+        </div>
+    </div>
+</body>
+</html>

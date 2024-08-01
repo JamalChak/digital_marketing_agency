@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - TwineEngine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>TwineEngine</h1>
+        <nav>
+            <a class="text-white" href="/">Home</a>
+            <a class="text-white" href="/about">About Us</a>
+            <a class="text-white" href="/services">Our Services</a>
+            <a class="text-white" href="/contact">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <h1>About TwineEngine</h1>
+        <p>We are a leading digital marketing agency.</p>
+        <button class="collapsible">Our Mission</button>
+        <div class="content">
+            <p>Our mission is to provide exceptional digital marketing services that drive business growth and success.</p>
+        </div>
+        <button class="collapsible">Our Team</button>
+        <div class="content">
+            <p>We have a diverse team of experienced professionals who are experts in their respective fields.</p>
+        </div>
+        <button class="collapsible">Our History</button>
+        <div class="content">
+            <p>TwineEngine was founded in 2010 and has been delivering top-notch digital marketing solutions ever since.</p>
+        </div>
+    </div>
+</body>
+</html>
